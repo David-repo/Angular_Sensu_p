@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hola mundo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="./lib/angular.js"></script>
+        <script src="./js/appModule.js"></script>
+        <script src="./js/appController.js"></script>
+    </head>
+    <body ng-app="appMain" ng-controller="AppController as $ctr">  <!-- ng-app y ng-controller son la raiz de todo angular -->
+        <!-- AppController se escribe en mayusculas por convenio. es una funcion constructora -->                
+        <div class="container">
+            <header class="jumbotron">
+                <h2>{{$ctr.sTitulo}}</h2>
+            </header>        
+            <article>
+                <form>
+                    <p>
+                        <label for="inputNombre">Escribe tu nombre</label>
+                        <input id="inputNombre" type="text" ng-model="$ctr.inputNombre">
+                    </p>
+                    <p>
+                        <button ng-click="$ctr.borrar()">Borrar</button>
+                    </p>
+                </form>
+                <p>Hola {{$ctr.inputNombre || 'Mundo'}} </p>
+            </article>
+            <footer class="well">{{$ctr.sAutor}} - 2017</footer>
+        </div>
+    </body>
+</html>
