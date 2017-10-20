@@ -1,0 +1,18 @@
+body{
+    box-sizing: border-box;
+}
+
+article{
+    div{
+        width:80%;
+    }
+}
+
+footer{
+    >div{
+        width:90%;
+    }
+    span{
+        color: white;
+    }
+}

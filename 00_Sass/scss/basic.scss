@@ -1,0 +1,38 @@
+$fuente : 'Comic sans';
+$color : blue;
+$size: 4em;
+$size2: 10px;
+
+h1{
+    font-family: $fuente;
+    font-size: $size;
+    color: $color;
+}
+
+h2{
+    font-family: $fuente;
+    font-size: $size/2;
+    color: $color;
+}
+
+.claseSelectorA{
+    color:maroon;
+    font-size: 3em;
+}
+
+#idDiv {
+    @extend .claseSelectorA;
+    text-decoration: underline;
+}
+
+@mixin mixin1($radio:10px){
+    border-radius:$radio;
+    font-size: $radio;
+}
+.selectorC{
+    @include mixin1(20px);
+}
+.selectorD{
+    @include mixin1(30px);
+    margin: 2em;
+}

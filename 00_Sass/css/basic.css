@@ -1,0 +1,27 @@
+h1 {
+  font-family: "Comic sans";
+  font-size: 4em;
+  color: blue; }
+
+h2 {
+  font-family: "Comic sans";
+  font-size: 2em;
+  color: blue; }
+
+.claseSelectorA, #idDiv {
+  color: maroon;
+  font-size: 3em; }
+
+#idDiv {
+  text-decoration: underline; }
+
+.selectorC {
+  border-radius: 20px;
+  font-size: 20px; }
+
+.selectorD {
+  border-radius: 30px;
+  font-size: 30px;
+  margin: 2em; }
+
+/*# sourceMappingURL=basic.css.map */

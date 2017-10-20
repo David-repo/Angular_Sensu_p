@@ -1,0 +1,12 @@
+body {
+  box-sizing: border-box; }
+
+article div {
+  width: 80%; }
+
+footer > div {
+  width: 90%; }
+footer span {
+  color: white; }
+
+/*# sourceMappingURL=basic2.css.map */
